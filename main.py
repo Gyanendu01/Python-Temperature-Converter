@@ -20,13 +20,13 @@ def temp_conversion(name,temp):
 
 # MAIN PROGRAM
 usr_data = usr_input()
-temp_conversion_result = temp_conversion(usr_data[0],usr_data[1])
+temp_conversion(usr_data[0],usr_data[1])
 
 while True:
     condn = input("Do you want to continue using this application? (y/n): ")
     if condn.lower() == "y":
         usr_data = usr_input()
-        temp_conversion_result = temp_conversion(usr_data[0],usr_data[1])
+        temp_conversion(usr_data[0],usr_data[1])
     else:
         print("\n\tTHANK YOU!")
         break
