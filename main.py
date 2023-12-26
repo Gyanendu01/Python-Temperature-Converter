@@ -1,9 +1,12 @@
 print("\n\tWELCOME TO THE TEMPERATURE CONVERSION APPLICATION")
 
 def usr_input():
+    try:
     # Get the user-name and temperature value
-    usr_name = input("\n\tEnter your username: ")
-    temp = float(input("\n\tWhat is the given temperature in degrees Fahrenheit: "))
+        usr_name = input("\n\tEnter your username: ")
+        temp = float(input("\n\tWhat is the given temperature in degrees Fahrenheit: "))
+    except ValueError:
+        print("\n\tInvalid temperature values")
     return usr_name, temp
 
 def temp_conversion(name,temp):
